@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Sort a HTML Table Alphabetically</title>
+</head>
+
+<body>
+
+    <table class="content-table" id="myTable">
+        <thead>
+            <tr>
+                <th  onclick="handleSortTable(0)">Name</th>
+                <th onclick="handleSortTable(1)">Height</th>
+                <th  onclick="handleSortTable(2)">Mass</th>
+                <th  onclick="handleSortTable(3)">Created</th>
+                <th >Delete row</th>
+
+            </tr>
+        </thead>
+
+        <tbody id="table-body">
+       
+        </tbody>
+       
+    </table>
+
+    <br>
+    <div class="center">
+        <div class="pagination">
+            <a onclick="goToFirst()" href="#">&laquo;</a>
+            <a onclick="goToPrevious()" href="#">&lt;</a>
+            <a id="leftButton" onclick="goToPage(event)" href="#" class="active">1</a>
+            <a id="centerButton" onclick="goToPage(event)" href="#">2</a>
+            <a id="rightButton" onclick="goToPage(event)" href="#">3</a>
+            <a onclick="goToNext()" href="#">&gt;</a>
+            <a onclick="goToLast()" href="#">&raquo;</a>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f4f4460403.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+        integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
