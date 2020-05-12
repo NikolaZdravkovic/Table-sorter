@@ -168,7 +168,7 @@ function higlightButton(button) {
 function fetchData() {
 
     updatePageNumbers();
-    let apiUrl = `https://swapi.co/api/people/?page=${currentPage}`;
+    let apiUrl = `https://swapi.dev/api/people/?page=${currentPage}`;
     axios.get(apiUrl).then((response) => {
         renderTable(response)
         totalNumberOfRows = response.data.count;
