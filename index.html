@@ -7,23 +7,28 @@
 </head>
 
 <body>
+    <h2>Table Sorter</h2>
+
+    <p>Table sorter made in pure JavaScript. Point of this project is to show all characters from Star Wars fetching data from <a href="https://swapi.dev/">Swapi Api</a>  in
+        descending and ascending order as well job well done in pagination. <br><br> You can also delete character if you want to
+    </p>
 
     <table class="content-table" id="myTable">
         <thead>
             <tr>
-                <th  onclick="handleSortTable(0)">Name</th>
+                <th onclick="handleSortTable(0)">Name</th>
                 <th onclick="handleSortTable(1)">Height</th>
-                <th  onclick="handleSortTable(2)">Mass</th>
-                <th  onclick="handleSortTable(3)">Created</th>
-                <th >Delete row</th>
+                <th onclick="handleSortTable(2)">Mass</th>
+                <th onclick="handleSortTable(3)">Created</th>
+                <th>Delete row</th>
 
             </tr>
         </thead>
 
         <tbody id="table-body">
-       
+
         </tbody>
-       
+
     </table>
 
     <br>
